@@ -12,6 +12,7 @@ def input_error(func):
             return 
     return inner
 
+@input_error
 def parse_input(user_input): #Функція отримання команди від користувача
     cmd, *args = user_input.split()
     cmd = cmd.strip().lower()
